@@ -12,9 +12,10 @@
   font-display: swap;
   src: local('Zilla Slab'), local('ZillaSlab-Regular'), url(https://fonts.gstatic.com/s/zillaslab/v5/dFa6ZfeM_74wlPZtksIFajo6-A.ttf) format('truetype');
 }
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+/*
+  http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
 */
 html,
 body,
@@ -140,6 +141,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Zilla Slab', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
 a {
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
@@ -148,7 +157,7 @@ a {
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
-  z-index: 3;
+  z-index: 1000;
 }
 .header .navigation {
   margin: 0;
@@ -161,6 +170,7 @@ a {
   transition: max-height 0.2s ease-out;
 }
 .header .navigation ul a {
+  color: #02182B;
   display: block;
   padding: 20px;
   text-decoration: none;
@@ -181,7 +191,7 @@ a {
   cursor: pointer;
 }
 .header .menu-icon .nav-icon {
-  background: #333;
+  background: #02182B;
   display: block;
   height: 2px;
   width: 18px;
@@ -189,7 +199,7 @@ a {
   transition: background 0.2s ease-out;
 }
 .header .menu-icon .nav-icon:before {
-  background: #333;
+  background: #02182B;
   content: "";
   display: block;
   height: 100%;
@@ -199,7 +209,7 @@ a {
   top: 5px;
 }
 .header .menu-icon .nav-icon:after {
-  background: #333;
+  background: #02182B;
   content: "";
   display: block;
   height: 100%;
@@ -246,7 +256,6 @@ a {
   }
 }
 .logo {
-  font-family: 'Zilla Slab', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-weight: bold;
   letter-spacing: -1px;
   color: black;
@@ -255,6 +264,7 @@ a {
 .logo a {
   color: #000000;
   text-decoration: none;
+  font-family: 'Zilla Slab', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 .logo a .logo-center {
   color: #FF6700;
@@ -262,8 +272,59 @@ a {
 .logo .tagline {
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 15px;
-  font-weight: normal;
+  font-weight: bold;
   letter-spacing: 0px;
   margin-top: -2px;
   margin-left: 3.5px;
+}
+section.section-spotlight {
+  background: url("../images/adorable-animal-blur-406014.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position-y: -80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+section.section-spotlight:before {
+  content: "";
+  display: block;
+  position: absolute;
+  /* could also be absolute */
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+section.section-spotlight .spotlight-lead {
+  margin-top: 10%;
+  text-align: center;
+  z-index: 10;
+}
+section.section-spotlight .spotlight-lead h2.spotlight-title {
+  font-size: 5.5rem;
+  margin-bottom: 10px;
+  color: #FF7200;
+}
+section.section-spotlight .spotlight-lead h3.spotlight-subtitle {
+  font-size: 3rem;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+section.section-spotlight .spotlight-image {
+  overflow: hidden;
+  width: 30%;
+  order: -1;
+}
+section.section-spotlight .spotlight-image img {
+  width: 100%;
+  height: auto;
+}
+section.section-about {
+  height: 100vh;
+}
+section.section-samples {
+  height: 100vh;
 }
