@@ -140,3 +140,130 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+a {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+.header .navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+.header .navigation ul a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+}
+.header .navigation ul a:hover {
+  background-color: #ddd;
+}
+.header .site-branding {
+  float: left;
+  display: block;
+  font-size: 2em;
+  padding: 10px 20px;
+}
+.header .menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+.header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+.header .menu-icon .nav-icon:before {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: 5px;
+}
+.header .menu-icon .nav-icon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: -5px;
+}
+.header .menu-button {
+  display: none;
+}
+.header .menu-button:checked ~ .navigation {
+  max-height: 240px;
+}
+.header .menu-button:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+.header .menu-button:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.header .menu-button:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+@media (min-width: 48em) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  .header .navigation {
+    clear: none;
+    max-height: none;
+    margin-left: auto;
+  }
+  .header .navigation li {
+    float: left;
+  }
+  .header .navigation li a {
+    padding: 20px 30px;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+.logo {
+  font-family: 'Zilla Slab', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: -1px;
+  color: black;
+  font-size: 35px;
+}
+.logo a {
+  color: #000000;
+  text-decoration: none;
+}
+.logo a .logo-center {
+  color: #FF6700;
+}
+.logo .tagline {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  margin-top: -2px;
+  margin-left: 3.5px;
+}
