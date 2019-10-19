@@ -429,10 +429,31 @@ section.section-about span a.button-about {
 }
 section.section-samples {
   height: 94vh;
+  background: #02182B;
+}
+@media screen and (max-width: 600px) {
+  section.section-samples {
+    height: 150em;
+  }
 }
 section.section-samples .grid {
-  background: yellow;
+  padding-top: 40px;
   display: flex;
   width: 100%;
+  height: 78vh;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 600px) {
+  section.section-samples .grid {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+}
+section.section-samples .grid .card {
+  padding: 10px;
+}
+section.section-samples .grid .sample-img {
+  width: 100%;
+  height: auto;
 }
