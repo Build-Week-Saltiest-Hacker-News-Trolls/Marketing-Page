@@ -1,21 +1,36 @@
 // SAMPLES
 
-section {
-  &.section-samples {
-    height: 90vh;
-    width: 80%;
-    margin-top: 20px;
-    padding: 20px;
-  }
+// kept if we want to use grid instead. 
+
+// section {
+//   &.section-samples {
+//     height: 90vh;
+//     width: 100%;
+//     margin-top: 20px;
+//     padding: 20px;
+//     // background: yellow;
+//   }
   
-  .grid {
-    width: 100%;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 100px 300px 300px 100px 100px;
-      .card {
-        margin-bottom: 30px;
-      }
+// .grid {
+//     width: 90%;
+//     justify-content: center;
+//     display: grid;
+//     // background: orange;
+//     grid-template-columns: 100px 400px 400px 100px 100px;
+//       .card {
+//         margin-bottom: 30px;
+//       }
+//   }
+// }
+section { 
+  &.section-samples {
+    height: 94vh;
+    .grid {  
+      background: yellow;
+      display: flex;
+      width: 100%;
+        // display: flex;
+      justify-content: space-evenly;
+    }
   }
-    
 }
