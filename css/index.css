@@ -433,7 +433,7 @@ section.section-samples {
 }
 @media screen and (max-width: 600px) {
   section.section-samples {
-    height: 150em;
+    height: 140em;
   }
 }
 section.section-samples .grid {
@@ -447,7 +447,7 @@ section.section-samples .grid {
   section.section-samples .grid {
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    height: 95%;
   }
 }
 section.section-samples .grid .card {
@@ -456,4 +456,9 @@ section.section-samples .grid .card {
 section.section-samples .grid .sample-img {
   width: 100%;
   height: auto;
+}
+section.section-samples span {
+  display: flex;
+  justify-content: space-around;
+  background: #02182B;
 }
