@@ -28,12 +28,14 @@ section {
       h2 {
         &.spotlight-title {
           margin-bottom: 10px;
-          color: @light-color;
-          text-shadow: 0 0 5px #000000;
+          color: @primary-color;
+          //text-shadow: 0 0 5px #000000;
+          text-outline: 1px 1px #ffffff;
         }
       }
       h3 {
         &.spotlight-subtitle {
+          color: @light-color;
           font-size: 3rem;
           font-family: @font-sans, @font-family;
         }
@@ -48,8 +50,15 @@ section {
         height: auto;
       }
     }
-    h2 {
-      .spotlight-lead {}
+    span {
+      z-index: 10;
+      display: block;
+      margin-top: 35px;
+      a {
+        &.button-spotlight {
+          z-index: 11;
+        }
+      }
     }
   }
 }
