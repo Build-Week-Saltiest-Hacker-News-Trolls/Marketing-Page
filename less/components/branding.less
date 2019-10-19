@@ -1,7 +1,6 @@
 // BRANDING
 
 .logo {
-  font-family: @font-slab, @font-family;
   font-weight: bold;
   letter-spacing: -1px;
   color: black;
@@ -9,6 +8,7 @@
   a {
     color: #000000;
     text-decoration: none;
+    font-family: @font-slab, @font-family;
     .logo-center {
       color: #FF6700;
     }
@@ -16,9 +16,19 @@
   .tagline {
     font-family: @font-sans, @font-family;
     font-size: 15px;
-    font-weight: normal;
+    font-weight: bold;
     letter-spacing: 0px;
     margin-top: -2px;
     margin-left: 3.5px;
+  }
+  .logo-image {
+    background-image: url("../images/saltyone.jpg");
+    background-size: cover;
+    height: 54px;
+    width: 54px;
+    float: left;
+    top: 0.5rem;
+    left: 15rem;
+    position: absolute;
   }
 }
