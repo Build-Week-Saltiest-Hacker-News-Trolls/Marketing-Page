@@ -434,10 +434,11 @@ section.section-samples {
   padding: 20px;
 }
 section .grid {
-  width: 80%;
+  width: 100%;
+  justify-content: center;
   display: grid;
   grid-template-columns: 100px 300px 300px 100px 100px;
 }
-section.section-samples span.button-samples {
-  display: none;
+section .grid .card {
+  margin-bottom: 30px;
 }
