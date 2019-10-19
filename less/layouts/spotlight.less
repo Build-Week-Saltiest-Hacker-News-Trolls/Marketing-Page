@@ -1,0 +1,55 @@
+// SPOTLIGHT
+
+section {
+  &.section-spotlight {
+    background: url("../images/disappointed-elderly-facepalm-23180.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-position-y: -80px;
+    //opacity: .2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      z-index: 10;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .spotlight-lead {
+      text-align: center;
+      z-index: 10;
+      h2 {
+        &.spotlight-title {
+          margin-bottom: 10px;
+          color: @light-color;
+          text-shadow: 0 0 5px #000000;
+        }
+      }
+      h3 {
+        &.spotlight-subtitle {
+          font-size: 3rem;
+          font-family: @font-sans, @font-family;
+        }
+      }
+    }
+    .spotlight-image {
+      overflow: hidden;
+      width: 30%;
+      order: -1;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    h2 {
+      .spotlight-lead {}
+    }
+  }
+}
