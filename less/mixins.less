@@ -17,3 +17,13 @@
   position:absolute;
   transition:all .2s ease-out;
 }
+.br(@size) {
+  -moz-border-radius: @size;
+  -webkit-border-radius: @size;
+  border-radius: @size;
+}
+.btn(@color) {
+  .br(2px);
+  background-color: @color;
+  padding: 0.8rem 1.8rem;
+}
