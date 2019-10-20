@@ -5,7 +5,13 @@ section {
     transition:height .5s ease-out;
     background: url("../images/disappointed-elderly-facepalm-23180.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
+    @media screen and (max-width: 600px) {
+      background-size: contain;
+      height: 55em;
+    }
+    background-position: center center;
     background-position-y: -80px;
     //opacity: .2;
     display: flex;
@@ -32,6 +38,9 @@ section {
           color: @primary-color;
           //text-shadow: 0 0 5px #000000;
           text-outline: 1px 1px #ffffff;
+          @media screen and (max-width: 600px) {
+            font-size: 2.5rem;
+          }
         }
       }
       h3 {
@@ -39,6 +48,9 @@ section {
           color: @light-color;
           font-size: 3rem;
           font-family: @font-sans, @font-family;
+          @media screen and (max-width: 600px) {
+            font-size: 2.5rem;
+          }
         }
       }
     }

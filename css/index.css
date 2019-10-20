@@ -321,12 +321,20 @@ section.section-spotlight {
   transition: height 0.5s ease-out;
   background: url("../images/disappointed-elderly-facepalm-23180.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
+  background-position: center center;
   background-position-y: -80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 600px) {
+  section.section-spotlight {
+    background-size: contain;
+    height: 55em;
+  }
 }
 section.section-spotlight:before {
   content: "";
@@ -348,10 +356,20 @@ section.section-spotlight .spotlight-lead h2.spotlight-title {
   color: #FF7200;
   text-outline: 1px 1px #ffffff;
 }
+@media screen and (max-width: 600px) {
+  section.section-spotlight .spotlight-lead h2.spotlight-title {
+    font-size: 2.5rem;
+  }
+}
 section.section-spotlight .spotlight-lead h3.spotlight-subtitle {
   color: #FEFFFE;
   font-size: 3rem;
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+@media screen and (max-width: 600px) {
+  section.section-spotlight .spotlight-lead h3.spotlight-subtitle {
+    font-size: 2.5rem;
+  }
 }
 section.section-spotlight .spotlight-image {
   overflow: hidden;
@@ -375,7 +393,7 @@ section.section-about {
   background: url("../images/madbrobackground.jpg");
   background-size: cover;
   background-position-y: 8rem;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -398,29 +416,66 @@ section.section-about h2 {
   z-index: 10;
   height: 5.5rem;
 }
+@media screen and (max-width: 600px) {
+  section.section-about h2 {
+    font-size: 50px;
+    margin-top: 70px;
+    height: 3rem;
+  }
+}
 section.section-about .column {
   z-index: 10;
   display: flex;
+}
+@media screen and (max-width: 600px) {
+  section.section-about .column {
+    height: 35rem;
+  }
 }
 section.section-about .column .col {
   width: 42%;
   padding: 0 2%;
 }
+@media screen and (max-width: 600px) {
+  section.section-about .column .col {
+    width: 100%;
+  }
+}
 section.section-about .column .col.col-l {
   width: 16%;
+}
+@media screen and (max-width: 600px) {
+  section.section-about .column .col.col-l {
+    width: 5%;
+  }
 }
 section.section-about .column .col.col-l img.product-image {
   height: 80%;
   width: auto;
 }
+@media screen and (max-width: 600px) {
+  section.section-about .column .col.col-l img.product-image {
+    display: none;
+  }
+}
 section.section-about .column .col p {
   margin-bottom: 30px;
+}
+@media screen and (max-width: 600px) {
+  section.section-about .column .col p {
+    font-size: 20px;
+  }
 }
 section.section-about .column .col ul {
   list-style: square;
 }
 section.section-about .column .col ul li {
   margin-bottom: 5px;
+}
+@media screen and (max-width: 600px) {
+  section.section-about .column .col ul li {
+    font-size: 20px;
+  }
 }
 section.section-about span {
   width: 100%;
@@ -432,11 +487,42 @@ section.section-about span a.button-about {
   z-index: 11;
 }
 section.section-samples {
-  height: 90vh;
-  width: 80%;
-  margin-top: 20px;
-  padding: 20px;
+  height: 94vh;
+  background: #02182B;
 }
+
+@media screen and (max-width: 600px) {
+  section.section-samples {
+    height: 140em;
+  }
+}
+section.section-samples .grid {
+  padding-top: 40px;
+  display: flex;
+  width: 100%;
+  height: 78vh;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 600px) {
+  section.section-samples .grid {
+    flex-direction: column;
+    align-items: center;
+    height: 95%;
+  }
+}
+section.section-samples .grid .card {
+  padding: 10px;
+}
+section.section-samples .grid .sample-img {
+  width: 100%;
+  height: auto;
+}
+section.section-samples span {
+  display: flex;
+  justify-content: space-around;
+  background: #02182B;
+}
+
 section.section-samples span.button-samples {
   display: none;
 }
