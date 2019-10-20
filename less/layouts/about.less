@@ -5,7 +5,8 @@ section {
     background: url("../images/madbrobackground.jpg");
     background-size: cover;
     background-position-y: 8rem;
-    height: 100vh;
+    // height: 100vh; changed per < full height broke section
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -26,29 +27,52 @@ section {
       margin: 7rem 0 2rem;
       z-index: 10;
       height: 5.5rem;
+      @media screen and (max-width: 600px) {
+        font-size: 50px;
+        margin-top: 70px;
+        height: 3rem;
+      }
     }
     .column {
       z-index: 10;
       display: flex;
+      @media screen and (max-width: 600px) {
+        height: 35rem;
+      }
       .col {
         width: 42%;
         padding: 0 2%;
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
         &.col-l {
           width: 16%;
+          @media screen and (max-width: 600px) {
+            width: 5%;
+          }
           img {
             &.product-image {
               height: 80%;
               width: auto;
+              @media screen and (max-width: 600px) {
+                display: none;
+              }
             }
           }
         }
         p {
           margin-bottom: 30px;
+          @media screen and (max-width: 600px) {
+            font-size: 20px;
+          }
         }
         ul {
           list-style: square;
           li {
             margin-bottom: 5px;
+            @media screen and (max-width: 600px) {
+              font-size: 20px;
+            }
           }
         }
       }
@@ -58,7 +82,6 @@ section {
       z-index: 10;
       margin-top: 2rem;
       display: flex;
-      //justify-content: center;
       a {
         &.button-about {
           z-index: 11;

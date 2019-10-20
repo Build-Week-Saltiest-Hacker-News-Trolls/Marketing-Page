@@ -330,6 +330,7 @@ section.section-spotlight {
 @media screen and (max-width: 600px) {
   section.section-spotlight {
     background-size: contain;
+    height: 55em;
   }
 }
 section.section-spotlight:before {
@@ -388,7 +389,7 @@ section.section-about {
   background: url("../images/madbrobackground.jpg");
   background-size: cover;
   background-position-y: 8rem;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -411,29 +412,66 @@ section.section-about h2 {
   z-index: 10;
   height: 5.5rem;
 }
+@media screen and (max-width: 600px) {
+  section.section-about h2 {
+    font-size: 50px;
+    margin-top: 70px;
+    height: 3rem;
+  }
+}
 section.section-about .column {
   z-index: 10;
   display: flex;
+}
+@media screen and (max-width: 600px) {
+  section.section-about .column {
+    height: 35rem;
+  }
 }
 section.section-about .column .col {
   width: 42%;
   padding: 0 2%;
 }
+@media screen and (max-width: 600px) {
+  section.section-about .column .col {
+    width: 100%;
+  }
+}
 section.section-about .column .col.col-l {
   width: 16%;
+}
+@media screen and (max-width: 600px) {
+  section.section-about .column .col.col-l {
+    width: 5%;
+  }
 }
 section.section-about .column .col.col-l img.product-image {
   height: 80%;
   width: auto;
 }
+@media screen and (max-width: 600px) {
+  section.section-about .column .col.col-l img.product-image {
+    display: none;
+  }
+}
 section.section-about .column .col p {
   margin-bottom: 30px;
+}
+@media screen and (max-width: 600px) {
+  section.section-about .column .col p {
+    font-size: 20px;
+  }
 }
 section.section-about .column .col ul {
   list-style: square;
 }
 section.section-about .column .col ul li {
   margin-bottom: 5px;
+}
+@media screen and (max-width: 600px) {
+  section.section-about .column .col ul li {
+    font-size: 20px;
+  }
 }
 section.section-about span {
   width: 100%;
