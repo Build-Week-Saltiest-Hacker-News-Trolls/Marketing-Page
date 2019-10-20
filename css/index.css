@@ -318,12 +318,19 @@ a.button {
 section.section-spotlight {
   background: url("../images/disappointed-elderly-facepalm-23180.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
+  background-position: center center;
   background-position-y: -80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 600px) {
+  section.section-spotlight {
+    background-size: contain;
+  }
 }
 section.section-spotlight:before {
   content: "";
@@ -345,10 +352,20 @@ section.section-spotlight .spotlight-lead h2.spotlight-title {
   color: #FF7200;
   text-outline: 1px 1px #ffffff;
 }
+@media screen and (max-width: 600px) {
+  section.section-spotlight .spotlight-lead h2.spotlight-title {
+    font-size: 2.5rem;
+  }
+}
 section.section-spotlight .spotlight-lead h3.spotlight-subtitle {
   color: #FEFFFE;
   font-size: 3rem;
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+@media screen and (max-width: 600px) {
+  section.section-spotlight .spotlight-lead h3.spotlight-subtitle {
+    font-size: 2.5rem;
+  }
 }
 section.section-spotlight .spotlight-image {
   overflow: hidden;
