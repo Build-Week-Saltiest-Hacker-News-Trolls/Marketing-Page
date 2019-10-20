@@ -197,6 +197,7 @@ a.button {
   transition: max-height 0.2s ease-out;
 }
 .header .navigation ul a {
+  border-radius: 2px;
   color: #02182B;
   display: block;
   padding: 20px;
@@ -204,7 +205,8 @@ a.button {
   text-decoration: none;
 }
 .header .navigation ul a:hover {
-  background-color: #ddd;
+  background-color: #bbbbbb;
+  color: #FEFFFE;
 }
 .header .site-branding {
   float: left;
@@ -316,6 +318,7 @@ a.button {
   position: absolute;
 }
 section.section-spotlight {
+  transition: height 0.5s ease-out;
   background: url("../images/disappointed-elderly-facepalm-23180.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -386,6 +389,7 @@ section.section-spotlight span a.button-spotlight {
   z-index: 11;
 }
 section.section-about {
+  transition: height 0.5s ease-out;
   background: url("../images/madbrobackground.jpg");
   background-size: cover;
   background-position-y: 8rem;
@@ -486,6 +490,7 @@ section.section-samples {
   height: 94vh;
   background: #02182B;
 }
+
 @media screen and (max-width: 600px) {
   section.section-samples {
     height: 140em;
@@ -516,4 +521,13 @@ section.section-samples span {
   display: flex;
   justify-content: space-around;
   background: #02182B;
+}
+
+section.section-samples span.button-samples {
+  display: none;
+}
+section .grid {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 100px 300px 300px 100px 100px;
 }
