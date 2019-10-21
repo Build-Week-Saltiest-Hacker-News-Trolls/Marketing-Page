@@ -10,7 +10,7 @@ h3 {
   font-size: 4rem;
 }
 h4 {
-  font-size: 3rem;
+  font-size: 2.25rem;
 }
 p, ul, li  {
   font-size: 2rem;
@@ -21,8 +21,10 @@ p, a, ul, li {
 a {
   &.button {
     .btn(@primary-color);
-    color: #ffffff;
-    text-decoration: none;
+    .link(#ffffff);
     font-size: 1.5rem;
+  }
+  &.link {
+    .link(#ffffff);
   }
 }
