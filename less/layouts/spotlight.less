@@ -48,7 +48,7 @@ section {
           font-size: 3rem;
           font-family: @font-sans, @font-family;
           @media screen and (max-width: 600px) {
-            font-size: 2.5rem;
+            font-size: 2rem;
           }
         }
       }
@@ -60,6 +60,28 @@ section {
       img {
         width: 100%;
         height: auto;
+      }
+    }
+    .spotlight-subsection {
+      display: flex;
+      justify-content: space-evenly;
+      width: 70%;
+      margin-top: 20px;
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+      h3 {
+        color: @primary-color;
+        font-size: 3rem;
+        font-family: @font-sans, @font-family;
+        @media screen and (max-width: 600px) {
+          font-size: 2rem;
+        }
+      }
+      .spotlight-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
     }
     span {

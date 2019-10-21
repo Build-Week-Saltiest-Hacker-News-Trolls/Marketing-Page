@@ -365,7 +365,7 @@ section.section-spotlight .spotlight-lead h3.spotlight-subtitle {
 }
 @media screen and (max-width: 600px) {
   section.section-spotlight .spotlight-lead h3.spotlight-subtitle {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 section.section-spotlight .spotlight-image {
@@ -376,6 +376,32 @@ section.section-spotlight .spotlight-image {
 section.section-spotlight .spotlight-image img {
   width: 100%;
   height: auto;
+}
+section.section-spotlight .spotlight-subsection {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin-top: 20px;
+}
+@media screen and (max-width: 600px) {
+  section.section-spotlight .spotlight-subsection {
+    width: 100%;
+  }
+}
+section.section-spotlight .spotlight-subsection h3 {
+  color: #FF7200;
+  font-size: 3rem;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+@media screen and (max-width: 600px) {
+  section.section-spotlight .spotlight-subsection h3 {
+    font-size: 2rem;
+  }
+}
+section.section-spotlight .spotlight-subsection .spotlight-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 section.section-spotlight span {
   z-index: 10;
