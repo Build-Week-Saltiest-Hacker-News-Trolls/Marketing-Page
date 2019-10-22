@@ -27,7 +27,7 @@ section {
     h2 {
       text-align: center;
       width: 100%;
-      margin: 7rem 0 2rem;
+      margin: 6rem 0 2rem;
       z-index: 10;
       height: 5.5rem;
       @media screen and (max-width: 600px) {
@@ -42,23 +42,28 @@ section {
       height: 60vh;
       @media screen and (max-width: 600px) {
         height: 32rem;
+        flex-direction: column;
       }
       .col {
         width: 50%;
         padding: 0 2%;
-        @media screen and (max-width: 600px) {
-          width: 100%;
+        @media screen and (max-width: 1000px),
+        screen and (max-width: 600px) {
+          width: auto;
+          padding: 2rem;
         }
         &.col-product {
           width: 300px;
-          @media screen and (max-width: 600px) {
-            width: 5%;
+          @media screen and (max-width: 1000px),
+          screen and (max-width: 600px) {
+            display: none;
           }
           img {
             &.product-image {
               height: 500px;
               width: auto;
-              @media screen and (max-width: 600px) {
+              @media screen and (max-width: 1000px),
+              screen and (max-width: 600px) {
                 display: none;
               }
             }
@@ -72,6 +77,7 @@ section {
         }
         ul {
           list-style: square;
+          margin-left: 25px;
           li {
             margin-bottom: 5px;
             @media screen and (max-width: 600px) {

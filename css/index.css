@@ -141,6 +141,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 h1,
 h2,
 h3,
@@ -170,14 +173,17 @@ li {
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 a.button {
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   background-color: #FF7200;
   padding: 0.8rem 1.8rem;
   color: #ffffff;
   text-decoration: none;
   font-size: 1.5rem;
+}
+a.button:hover {
+  background-color: #ff801a;
 }
 a.link {
   color: #ffffff;
@@ -279,10 +285,13 @@ a.link {
     max-height: none;
     margin-left: auto;
   }
-  .header .navigation li {
+  .header .navigation ul {
+    padding-right: 6px;
+  }
+  .header .navigation ul li {
     float: left;
   }
-  .header .navigation li a {
+  .header .navigation ul li a {
     padding: 20px 30px;
   }
   .header .menu-icon {
@@ -333,6 +342,9 @@ footer p {
   font-size: 1.25rem;
   color: #FEFFFE;
 }
+footer span {
+  margin-top: 0.65rem;
+}
 footer span a {
   display: flex;
   flex-direction: column;
@@ -347,6 +359,9 @@ footer span a:before {
   border: 0.55rem solid transparent;
   border-bottom-color: #FEFFFE;
   margin-bottom: 8px;
+}
+footer span a:hover {
+  color: #dddddd;
 }
 section.section-spotlight {
   height: 100vh;
@@ -443,7 +458,7 @@ section.section-about:before {
 section.section-about h2 {
   text-align: center;
   width: 100%;
-  margin: 7rem 0 2rem;
+  margin: 6rem 0 2rem;
   z-index: 10;
   height: 5.5rem;
 }
@@ -462,30 +477,32 @@ section.section-about .column {
 @media screen and (max-width: 600px) {
   section.section-about .column {
     height: 32rem;
+    flex-direction: column;
   }
 }
 section.section-about .column .col {
   width: 50%;
   padding: 0 2%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px), screen and (max-width: 600px) {
   section.section-about .column .col {
-    width: 100%;
+    width: auto;
+    padding: 2rem;
   }
 }
 section.section-about .column .col.col-product {
   width: 300px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px), screen and (max-width: 600px) {
   section.section-about .column .col.col-product {
-    width: 5%;
+    display: none;
   }
 }
 section.section-about .column .col.col-product img.product-image {
   height: 500px;
   width: auto;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px), screen and (max-width: 600px) {
   section.section-about .column .col.col-product img.product-image {
     display: none;
   }
@@ -500,6 +517,7 @@ section.section-about .column .col p {
 }
 section.section-about .column .col ul {
   list-style: square;
+  margin-left: 25px;
 }
 section.section-about .column .col ul li {
   margin-bottom: 5px;
@@ -520,37 +538,43 @@ section.section-about span a.button-about {
   z-index: 11;
 }
 section.section-samples {
-  height: 94vh;
+  height: 100vh;
   background: #CC2936;
+  padding-bottom: 3rem;
 }
 @media screen and (max-width: 600px) {
   section.section-samples {
-    height: 140em;
-    padding-bottom: 1.25rem;
+    height: 100%;
+    padding-bottom: 2.5rem;
   }
 }
 section.section-samples .grid {
-  padding-top: 40px;
+  padding-top: 6rem;
   display: flex;
   width: 100%;
-  height: 78vh;
+  height: auto;
   justify-content: space-evenly;
 }
 @media screen and (max-width: 600px) {
   section.section-samples .grid {
     flex-direction: column;
     align-items: center;
-    height: 95%;
   }
 }
 section.section-samples .grid .card {
   padding: 10px;
 }
-section.section-samples .grid .sample-img {
+section.section-samples .grid .card .sample-img {
   width: 100%;
   height: auto;
 }
 section.section-samples span {
   display: flex;
   justify-content: space-around;
+  margin-top: 3rem;
+}
+@media screen and (max-width: 600px) {
+  section.section-samples span {
+    margin-top: 2rem;
+  }
 }
