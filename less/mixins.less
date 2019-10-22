@@ -22,8 +22,15 @@
   -webkit-border-radius: @size;
   border-radius: @size;
 }
+.link(@color) {
+  color: @color;
+  text-decoration: none;
+}
 .btn(@color) {
-  .br(2px);
+  .br(3px);
   background-color: @color;
   padding: 0.8rem 1.8rem;
+}
+.hover(@color) {
+  background-color: lighten(@color, 5%);
 }

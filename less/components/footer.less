@@ -1,0 +1,37 @@
+// FOOTER
+
+footer {
+  background-color: @dark-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem;
+  p {
+    font-size: 1.25rem;
+    color: @light-color;
+  }
+  span {
+    margin-top: 0.65rem;
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        display: inline-block;
+        border: 0.55rem solid transparent;
+        border-bottom-color: @light-color;
+        margin-bottom: 8px;
+      }
+      &:hover {
+        color: #dddddd;
+      }
+      &.link-top {
+      }
+    }
+  }
+}
