@@ -27,8 +27,11 @@ section {
     height: 100vh;
     background: @alert-color;
     padding-bottom: 3rem;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1000px),
+    screen and (max-width: 600px) {
       height: 100%;
+    }
+    @media screen and (max-width: 600px) {
       padding-bottom: 2.5rem;
     }
     .grid {
@@ -37,6 +40,10 @@ section {
       width: 100%;
       height: auto;
       justify-content: space-evenly;
+      @media screen and (max-width: 1000px),
+      screen and (max-width: 600px) {
+        flex-wrap: wrap;
+      }
       @media screen and (max-width: 600px) {
         flex-direction: column;
         align-items: center;
@@ -46,6 +53,9 @@ section {
         .sample-img {
           width: 100%;
           height: auto;
+        }
+        @media screen and (max-width: 1000px) {
+          flex-basis: 47%;
         }
       }
     }

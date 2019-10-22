@@ -22,7 +22,7 @@ section {
       height: 100%;
       width: 100%;
       z-index: 10;
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(255, 255, 255, 0.87);
     }
     h2 {
       text-align: center;
@@ -47,9 +47,11 @@ section {
       .col {
         width: 50%;
         padding: 0 2%;
+        @media screen and (max-width: 600px) {
+          width: auto;
+        }
         @media screen and (max-width: 1000px),
         screen and (max-width: 600px) {
-          width: auto;
           padding: 2rem;
         }
         &.col-product {

@@ -178,6 +178,7 @@ a.button {
   border-radius: 3px;
   background-color: #FF7200;
   padding: 0.8rem 1.8rem;
+  cursor: pointer;
   color: #ffffff;
   text-decoration: none;
   font-size: 1.5rem;
@@ -188,6 +189,12 @@ a.button:hover {
 a.link {
   color: #ffffff;
   text-decoration: none;
+}
+body #main-wrapper.main-wrapper {
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
 }
 .header {
   background-color: #fff;
@@ -275,7 +282,7 @@ a.link {
   transform: rotate(45deg);
   top: 0;
 }
-@media (min-width: 48em) {
+@media (min-width: 801px) {
   .header {
     display: flex;
     align-items: center;
@@ -293,6 +300,10 @@ a.link {
   }
   .header .navigation ul li a {
     padding: 20px 30px;
+    cursor: pointer;
+  }
+  .header .navigation ul li a:focus {
+    border-bottom: #FF7200;
   }
   .header .menu-icon {
     display: none;
@@ -397,7 +408,7 @@ section.section-spotlight .spotlight-lead h2.spotlight-title {
   color: #FF7200;
   text-outline: 1px 1px #ffffff;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px), screen and (max-width: 600px) {
   section.section-spotlight .spotlight-lead h2.spotlight-title {
     font-size: 3rem;
   }
@@ -407,7 +418,7 @@ section.section-spotlight .spotlight-lead h3.spotlight-subtitle {
   font-size: 3rem;
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px), screen and (max-width: 600px) {
   section.section-spotlight .spotlight-lead h3.spotlight-subtitle {
     font-size: 2rem;
   }
@@ -453,7 +464,7 @@ section.section-about:before {
   height: 100%;
   width: 100%;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.87);
 }
 section.section-about h2 {
   text-align: center;
@@ -484,9 +495,13 @@ section.section-about .column .col {
   width: 50%;
   padding: 0 2%;
 }
-@media screen and (max-width: 1000px), screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   section.section-about .column .col {
     width: auto;
+  }
+}
+@media screen and (max-width: 1000px), screen and (max-width: 600px) {
+  section.section-about .column .col {
     padding: 2rem;
   }
 }
@@ -542,9 +557,13 @@ section.section-samples {
   background: #CC2936;
   padding-bottom: 3rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px), screen and (max-width: 600px) {
   section.section-samples {
     height: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  section.section-samples {
     padding-bottom: 2.5rem;
   }
 }
@@ -554,6 +573,11 @@ section.section-samples .grid {
   width: 100%;
   height: auto;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 1000px), screen and (max-width: 600px) {
+  section.section-samples .grid {
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 600px) {
   section.section-samples .grid {
@@ -567,6 +591,11 @@ section.section-samples .grid .card {
 section.section-samples .grid .card .sample-img {
   width: 100%;
   height: auto;
+}
+@media screen and (max-width: 1000px) {
+  section.section-samples .grid .card {
+    flex-basis: 47%;
+  }
 }
 section.section-samples span {
   display: flex;
