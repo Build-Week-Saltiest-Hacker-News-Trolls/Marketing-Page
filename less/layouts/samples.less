@@ -40,7 +40,10 @@ section {
       width: 100%;
       height: auto;
       justify-content: space-evenly;
-      flex-wrap: wrap;
+      @media screen and (max-width: 1000px),
+      screen and (max-width: 600px) {
+        flex-wrap: wrap;
+      }
       @media screen and (max-width: 600px) {
         flex-direction: column;
         align-items: center;

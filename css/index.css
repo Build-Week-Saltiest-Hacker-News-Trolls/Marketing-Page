@@ -302,6 +302,9 @@ body #main-wrapper.main-wrapper {
     padding: 20px 30px;
     cursor: pointer;
   }
+  .header .navigation ul li a:focus {
+    border-bottom: #FF7200;
+  }
   .header .menu-icon {
     display: none;
   }
@@ -405,7 +408,7 @@ section.section-spotlight .spotlight-lead h2.spotlight-title {
   color: #FF7200;
   text-outline: 1px 1px #ffffff;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px), screen and (max-width: 600px) {
   section.section-spotlight .spotlight-lead h2.spotlight-title {
     font-size: 3rem;
   }
@@ -415,7 +418,7 @@ section.section-spotlight .spotlight-lead h3.spotlight-subtitle {
   font-size: 3rem;
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px), screen and (max-width: 600px) {
   section.section-spotlight .spotlight-lead h3.spotlight-subtitle {
     font-size: 2rem;
   }
@@ -461,7 +464,7 @@ section.section-about:before {
   height: 100%;
   width: 100%;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.87);
 }
 section.section-about h2 {
   text-align: center;
@@ -570,7 +573,11 @@ section.section-samples .grid {
   width: 100%;
   height: auto;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+}
+@media screen and (max-width: 1000px), screen and (max-width: 600px) {
+  section.section-samples .grid {
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 600px) {
   section.section-samples .grid {
