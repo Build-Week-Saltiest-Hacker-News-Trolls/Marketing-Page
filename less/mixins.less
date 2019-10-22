@@ -30,7 +30,14 @@
   .br(3px);
   background-color: @color;
   padding: 0.8rem 1.8rem;
+  cursor: pointer;
 }
 .hover(@color) {
   background-color: lighten(@color, 5%);
+}
+.trans(@time) {
+  transition: all @time ease-in-out;
+  -webkit-transition: all @time ease-in-out;
+  -o-transition: all @time ease-in-out;
+  -ms-transition: all @time ease-in-out;
 }

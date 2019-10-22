@@ -47,9 +47,11 @@ section {
       .col {
         width: 50%;
         padding: 0 2%;
+        @media screen and (max-width: 600px) {
+          width: auto;
+        }
         @media screen and (max-width: 1000px),
         screen and (max-width: 600px) {
-          width: auto;
           padding: 2rem;
         }
         &.col-product {
