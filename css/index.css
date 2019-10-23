@@ -214,7 +214,9 @@ body #main-wrapper.main-wrapper {
   transition: max-height 0.2s ease-out;
 }
 .header .navigation ul a {
-  border-radius: 2px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
   color: #02182B;
   display: block;
   padding: 20px;
@@ -222,14 +224,8 @@ body #main-wrapper.main-wrapper {
   text-decoration: none;
 }
 .header .navigation ul a:hover {
-  background-color: #bbbbbb;
+  background-color: #FF7200;
   color: #FEFFFE;
-}
-.header .site-branding {
-  float: left;
-  display: block;
-  font-size: 2em;
-  padding: 10px 20px;
 }
 .header .menu-icon {
   padding: 34px 24px;
@@ -309,21 +305,29 @@ body #main-wrapper.main-wrapper {
     display: none;
   }
 }
-.logo {
+.site-branding {
+  float: left;
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  padding: 10px 20px;
+}
+.site-branding .logo {
   font-weight: bold;
   letter-spacing: -1px;
   color: black;
   font-size: 35px;
+  margin-top: -2px;
 }
-.logo a {
+.site-branding .logo a {
   color: #000000;
   text-decoration: none;
   font-family: 'Zilla Slab', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
-.logo a .logo-center {
+.site-branding .logo a .logo-center {
   color: #FF6700;
 }
-.logo .tagline {
+.site-branding .logo .tagline {
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: bold;
@@ -331,15 +335,13 @@ body #main-wrapper.main-wrapper {
   margin-top: -2px;
   margin-left: 3.5px;
 }
-.logo .logo-image {
+.site-branding .logo-image {
   background-image: url("../images/saltyone.jpg");
   background-size: cover;
-  height: 42px;
+  height: 46px;
   width: 50px;
-  float: left;
-  top: 0.9rem;
-  left: 15.1rem;
-  position: absolute;
+  order: -1;
+  margin-right: 10px;
 }
 footer {
   background-color: #02182B;
@@ -558,7 +560,7 @@ section.section-about span a.button-about {
   z-index: 11;
 }
 section.section-samples {
-  height: 100vh;
+  height: 80%;
   background: #CC2936;
   padding-bottom: 3rem;
 }
