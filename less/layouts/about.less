@@ -2,16 +2,18 @@
 
 section {
   &.section-about {
-    transition:height .5s ease-out;
     background: url("../images/madbrobackground.jpg");
     background-size: cover;
     background-position-y: 8rem;
-    // height: 100vh; changed per < full height broke section
-    height: 100%;
+     height: 100vh;
+    //height: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    @media screen and (max-width: 600px) {
+      padding-top: 3rem;
+    }
     &:before {
       content: "";
       position: absolute;
@@ -20,12 +22,12 @@ section {
       height: 100%;
       width: 100%;
       z-index: 10;
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(255, 255, 255, 0.87);
     }
     h2 {
       text-align: center;
       width: 100%;
-      margin: 7rem 0 2rem;
+      margin: 6rem 0 2rem;
       z-index: 10;
       height: 5.5rem;
       @media screen and (max-width: 600px) {
@@ -37,25 +39,33 @@ section {
     .column {
       z-index: 10;
       display: flex;
+      height: 60vh;
       @media screen and (max-width: 600px) {
-        height: 35rem;
+        height: 32rem;
+        flex-direction: column;
       }
       .col {
-        width: 42%;
+        width: 50%;
         padding: 0 2%;
         @media screen and (max-width: 600px) {
-          width: 100%;
+          width: auto;
         }
-        &.col-l {
-          width: 16%;
-          @media screen and (max-width: 600px) {
-            width: 5%;
+        @media screen and (max-width: 1000px),
+        screen and (max-width: 600px) {
+          padding: 2rem;
+        }
+        &.col-product {
+          width: 300px;
+          @media screen and (max-width: 1000px),
+          screen and (max-width: 600px) {
+            display: none;
           }
           img {
             &.product-image {
-              height: 80%;
+              height: 500px;
               width: auto;
-              @media screen and (max-width: 600px) {
+              @media screen and (max-width: 1000px),
+              screen and (max-width: 600px) {
                 display: none;
               }
             }
@@ -69,6 +79,7 @@ section {
         }
         ul {
           list-style: square;
+          margin-left: 25px;
           li {
             margin-bottom: 5px;
             @media screen and (max-width: 600px) {
@@ -83,6 +94,7 @@ section {
       z-index: 10;
       margin-top: 2rem;
       display: flex;
+      justify-content: center;
       a {
         &.button-about {
           z-index: 11;

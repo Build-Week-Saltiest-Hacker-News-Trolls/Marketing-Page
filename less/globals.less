@@ -1,5 +1,11 @@
 // GLOBALS
 
+body {
+  //overflow-y: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: @font-slab, @font-family;
 }
@@ -10,7 +16,7 @@ h3 {
   font-size: 4rem;
 }
 h4 {
-  font-size: 3rem;
+  font-size: 2.25rem;
 }
 p, ul, li  {
   font-size: 2rem;
@@ -21,8 +27,13 @@ p, a, ul, li {
 a {
   &.button {
     .btn(@primary-color);
-    color: #ffffff;
-    text-decoration: none;
+    .link(#ffffff);
     font-size: 1.5rem;
+    &:hover {
+      .hover(@primary-color);
+    }
+  }
+  &.link {
+    .link(#ffffff);
   }
 }

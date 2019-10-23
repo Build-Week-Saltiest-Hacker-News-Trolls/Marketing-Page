@@ -37,7 +37,7 @@
     padding:10px 20px;
   }
   .menu-icon {
-    padding: 28px 20px;
+    padding: 34px 24px;
     position:relative;
     float:right;
     cursor: pointer;
@@ -76,7 +76,7 @@
   }
 }
 
-@media (min-width:48em){
+@media (min-width:801px){
   .header {
     display: flex;
     align-items: center;
@@ -84,11 +84,19 @@
       clear:none;
       max-height:none;
       margin-left: auto;
-      li{
-        float:left;
-        a {
-          padding:20px 30px;
+      ul {
+        padding-right: 6px;
+        li{
+          float:left;
+          a {
+            padding:20px 30px;
+            cursor: pointer;
+            &:focus {
+              border-bottom: @primary-color;
+            }
+          }
         }
+
       }
     }
     .menu-icon {

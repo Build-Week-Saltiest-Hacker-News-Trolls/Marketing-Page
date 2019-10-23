@@ -141,6 +141,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 h1,
 h2,
 h3,
@@ -156,7 +159,7 @@ h3 {
   font-size: 4rem;
 }
 h4 {
-  font-size: 3rem;
+  font-size: 2.25rem;
 }
 p,
 ul,
@@ -170,14 +173,28 @@ li {
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 a.button {
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   background-color: #FF7200;
   padding: 0.8rem 1.8rem;
+  cursor: pointer;
   color: #ffffff;
   text-decoration: none;
   font-size: 1.5rem;
+}
+a.button:hover {
+  background-color: #ff801a;
+}
+a.link {
+  color: #ffffff;
+  text-decoration: none;
+}
+body #main-wrapper.main-wrapper {
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
 }
 .header {
   background-color: #fff;
@@ -215,7 +232,7 @@ a.button {
   padding: 10px 20px;
 }
 .header .menu-icon {
-  padding: 28px 20px;
+  padding: 34px 24px;
   position: relative;
   float: right;
   cursor: pointer;
@@ -265,7 +282,7 @@ a.button {
   transform: rotate(45deg);
   top: 0;
 }
-@media (min-width: 48em) {
+@media (min-width: 801px) {
   .header {
     display: flex;
     align-items: center;
@@ -275,11 +292,18 @@ a.button {
     max-height: none;
     margin-left: auto;
   }
-  .header .navigation li {
+  .header .navigation ul {
+    padding-right: 6px;
+  }
+  .header .navigation ul li {
     float: left;
   }
-  .header .navigation li a {
+  .header .navigation ul li a {
     padding: 20px 30px;
+    cursor: pointer;
+  }
+  .header .navigation ul li a:focus {
+    border-bottom: #FF7200;
   }
   .header .menu-icon {
     display: none;
@@ -317,14 +341,48 @@ a.button {
   left: 15.1rem;
   position: absolute;
 }
+footer {
+  background-color: #02182B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3.5rem;
+}
+@media screen and (max-width: 600px) {
+  footer {
+    padding: 3.5rem 0;
+  }
+}
+footer p {
+  font-size: 1.25rem;
+  color: #FEFFFE;
+}
+footer span {
+  margin-top: 0.65rem;
+}
+footer span a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer span a:before {
+  content: "";
+  width: 0;
+  height: 0;
+  display: inline-block;
+  border: 0.55rem solid transparent;
+  border-bottom-color: #FEFFFE;
+  margin-bottom: 8px;
+}
+footer span a:hover {
+  color: #dddddd;
+}
 section.section-spotlight {
-  transition: height 0.5s ease-out;
-  background: url("../images/disappointed-elderly-facepalm-23180.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 100vh;
-  background-position: center center;
-  background-position-y: -80px;
+  background: url("../images/disappointed-elderly-facepalm-23180.jpg") no-repeat center center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -332,8 +390,7 @@ section.section-spotlight {
 }
 @media screen and (max-width: 600px) {
   section.section-spotlight {
-    background-size: contain;
-    height: 55em;
+    background-position-y: 0;
   }
 }
 section.section-spotlight:before {
@@ -356,9 +413,9 @@ section.section-spotlight .spotlight-lead h2.spotlight-title {
   color: #FF7200;
   text-outline: 1px 1px #ffffff;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px), screen and (max-width: 600px) {
   section.section-spotlight .spotlight-lead h2.spotlight-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 section.section-spotlight .spotlight-lead h3.spotlight-subtitle {
@@ -366,7 +423,7 @@ section.section-spotlight .spotlight-lead h3.spotlight-subtitle {
   font-size: 3rem;
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px), screen and (max-width: 600px) {
   section.section-spotlight .spotlight-lead h3.spotlight-subtitle {
     font-size: 2rem;
   }
@@ -409,21 +466,26 @@ section.section-spotlight .spotlight-subsection .spotlight-col {
 section.section-spotlight span {
   z-index: 10;
   display: block;
-  margin-top: 35px;
+  margin-top: 45px;
 }
 section.section-spotlight span a.button-spotlight {
   z-index: 11;
+  margin: 0 4px;
 }
 section.section-about {
-  transition: height 0.5s ease-out;
   background: url("../images/madbrobackground.jpg");
   background-size: cover;
   background-position-y: 8rem;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (max-width: 600px) {
+  section.section-about {
+    padding-top: 3rem;
+  }
 }
 section.section-about:before {
   content: "";
@@ -433,12 +495,12 @@ section.section-about:before {
   height: 100%;
   width: 100%;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.87);
 }
 section.section-about h2 {
   text-align: center;
   width: 100%;
-  margin: 7rem 0 2rem;
+  margin: 6rem 0 2rem;
   z-index: 10;
   height: 5.5rem;
 }
@@ -452,35 +514,42 @@ section.section-about h2 {
 section.section-about .column {
   z-index: 10;
   display: flex;
+  height: 60vh;
 }
 @media screen and (max-width: 600px) {
   section.section-about .column {
-    height: 35rem;
+    height: 32rem;
+    flex-direction: column;
   }
 }
 section.section-about .column .col {
-  width: 42%;
+  width: 50%;
   padding: 0 2%;
 }
 @media screen and (max-width: 600px) {
   section.section-about .column .col {
-    width: 100%;
+    width: auto;
   }
 }
-section.section-about .column .col.col-l {
-  width: 16%;
-}
-@media screen and (max-width: 600px) {
-  section.section-about .column .col.col-l {
-    width: 5%;
+@media screen and (max-width: 1000px), screen and (max-width: 600px) {
+  section.section-about .column .col {
+    padding: 2rem;
   }
 }
-section.section-about .column .col.col-l img.product-image {
-  height: 80%;
+section.section-about .column .col.col-product {
+  width: 300px;
+}
+@media screen and (max-width: 1000px), screen and (max-width: 600px) {
+  section.section-about .column .col.col-product {
+    display: none;
+  }
+}
+section.section-about .column .col.col-product img.product-image {
+  height: 500px;
   width: auto;
 }
-@media screen and (max-width: 600px) {
-  section.section-about .column .col.col-l img.product-image {
+@media screen and (max-width: 1000px), screen and (max-width: 600px) {
+  section.section-about .column .col.col-product img.product-image {
     display: none;
   }
 }
@@ -494,6 +563,7 @@ section.section-about .column .col p {
 }
 section.section-about .column .col ul {
   list-style: square;
+  margin-left: 25px;
 }
 section.section-about .column .col ul li {
   margin-bottom: 5px;
@@ -508,42 +578,63 @@ section.section-about span {
   z-index: 10;
   margin-top: 2rem;
   display: flex;
+  justify-content: center;
 }
 section.section-about span a.button-about {
   z-index: 11;
 }
 section.section-samples {
-  height: 94vh;
-  background: #02182B;
+  height: 100vh;
+  background: #CC2936;
+  padding-bottom: 3rem;
+}
+@media screen and (max-width: 1000px), screen and (max-width: 600px) {
+  section.section-samples {
+    height: 100%;
+  }
 }
 @media screen and (max-width: 600px) {
   section.section-samples {
-    height: 140em;
+    padding-bottom: 2.5rem;
   }
 }
 section.section-samples .grid {
-  padding-top: 40px;
+  padding-top: 6rem;
   display: flex;
   width: 100%;
-  height: 78vh;
+  height: auto;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 1000px), screen and (max-width: 600px) {
+  section.section-samples .grid {
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 600px) {
   section.section-samples .grid {
     flex-direction: column;
     align-items: center;
-    height: 95%;
   }
 }
 section.section-samples .grid .card {
   padding: 10px;
 }
-section.section-samples .grid .sample-img {
+section.section-samples .grid .card .sample-img {
   width: 100%;
   height: auto;
+}
+@media screen and (max-width: 1000px) {
+  section.section-samples .grid .card {
+    flex-basis: 47%;
+  }
 }
 section.section-samples span {
   display: flex;
   justify-content: space-around;
-  background: #02182B;
+  margin-top: 3rem;
+}
+@media screen and (max-width: 600px) {
+  section.section-samples span {
+    margin-top: 2rem;
+  }
 }
