@@ -586,7 +586,7 @@ section.section-about span a.button-about {
   z-index: 11;
 }
 section.section-samples {
-  height: 80%;
+  height: 100%;
   background: #CC2936;
   padding-bottom: 3rem;
 }
