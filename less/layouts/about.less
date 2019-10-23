@@ -103,3 +103,63 @@ section {
     }
   }
 }
+
+
+// About page 
+
+.about-nav {
+  width: 100%;
+  justify-content: space-between;
+  .about-nav-links {
+    width: auto;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    a {
+      text-decoration: none;
+      padding: 20px;
+      &:hover {
+        background: @primary-color;
+      }
+    }
+  }
+
+}
+
+.about-container {
+  margin: 0 auto;
+  padding: 100px;
+  width: 100%;
+  background: @alert-color;
+  .about-main {
+    // background: green;
+    p{
+      text-align: center;
+      font-size: 3vw;
+      font-family: @font-family, @font-slab;
+      color: @accent-color;
+    }
+    .sample-container {
+      // background: orange;
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+      .sample-image {
+        width: 20%;
+        max-width: 300px;
+        min-width: 150px;
+        height: auto;
+      }
+      ul {
+        padding-right: 50px;
+        list-style: square;
+        // background: pink;
+        li {
+          font-size: 3vw;
+          font-family: @font-family, @font-slab;
+          color: @accent-color;
+        }
+      }
+    }
+  }
+}
