@@ -12,34 +12,28 @@
     list-style: none;
     overflow: hidden;
     background-color: #fff;
-    clear:both;
-    max-height:0;
-    transition:max-height .2s ease-out;
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
     ul {
       a {
-        border-radius: 2px;
+        .br(0);
         color: @dark-color;
-        display:block;
-        padding:20px;
+        display: block;
+        padding: 20px;
         font-size: 1rem;
-        text-decoration:none;
+        text-decoration: none;
         &:hover {
-          background-color:#bbbbbb;
+          background-color: @primary-color;
           color: @light-color;
         }
       }
     }
   }
-  .site-branding {
-    float:left;
-    display:block;
-    font-size:2em;
-    padding:10px 20px;
-  }
   .menu-icon {
     padding: 34px 24px;
-    position:relative;
-    float:right;
+    position: relative;
+    float: right;
     cursor: pointer;
     .nav-icon {
       .nIN();
@@ -54,21 +48,21 @@
     }
   }
   .menu-button {
-    display:none;
+    display: none;
     &:checked {
       ~ .navigation {
-        max-height:240px;
+        max-height: 240px;
       }
       ~ .menu-icon {
         .nav-icon {
-          background:transparent;
+          background: transparent;
           &:before {
             transform: rotate(-45deg);
-            top:0;
+            top: 0;
           }
           &:after {
             transform: rotate(45deg);
-            top:0;
+            top: 0;
           }
         }
       }
@@ -81,15 +75,15 @@
     display: flex;
     align-items: center;
     .navigation {
-      clear:none;
-      max-height:none;
+      clear: none;
+      max-height: none;
       margin-left: auto;
       ul {
         padding-right: 6px;
         li{
-          float:left;
+          float: left;
           a {
-            padding:20px 30px;
+            padding: 20px 30px;
             cursor: pointer;
             &:focus {
               border-bottom: @primary-color;
