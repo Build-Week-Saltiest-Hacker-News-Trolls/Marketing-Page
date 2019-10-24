@@ -127,30 +127,44 @@ section {
 }
 
 .about-container {
-  padding: 50px;
+  padding-top: 30px;
+  padding-left: 50px;
   width: 100%;
   background: @alert-color;
     h1 {
+      // background: lightblue;
       padding-top: 100px;
+      width: 92%;
       text-align: center;
-      font-size: 3vw;
+      font-size: 60px;
       font-family: @font-family, @font-slab;
       color: @accent-color;
+      @media screen and (max-width: 600px) {
+        font-size: 40px;
+        // background: grey;
+        width: 78%;        
+      }
     }
   .team-section {
-    margin-top: 50px;
-    // margin-right: 100px;
-    height: 100vh;
-    background: green;
+    margin-top: 30px;
+    margin-right: 100px;
+    height: 100%;
+    // background: green;
     display: flex;
+    justify-content: space-around;
+    align-content: space-around;
     flex-wrap: wrap;
-  
+    @media screen and (max-width: 600px) {
+      align-items: space-between;
+      padding: 0px;
+    }
     .team-card {
-      background: orange;
-      width: 20%;
+      background: @primary-color;
+      width: 30%;
       height: 30vh;
-      min-width:100px;
-      padding: 10px;
+      width:300px;
+      padding: 20px;
+      margin-bottom: 20px;
       border: 3px solid black;
       border-radius: 10px;
       display: flex;
@@ -159,21 +173,25 @@ section {
       .tCard-top {
         display: flex;
         justify-content: space-around;
-        background: yellow;
-        .member-name {
-          background: grey;
-          display: flex;
-          width: 50%;
-          flex-direction: column;
-          align-items: center;
-          // justify-items: flex-start; name doesn't move to top, inheritence issue?
-          h1 {
-            font-size: 1.5vw;
-          }
-          h2 {
-            font-size: 1.2vw;
-          }
+        // background: yellow;
+      .member-name {
+        // background: grey;
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        justify-items: flex-start;
+        align-items: center;
+        h1 {
+          font-size: 20px;
+          padding: 15px;
+          color: whitesmoke;
+          // margin: 0;
         }
+        h2 {
+          font-size: 18px;
+          color: whitesmoke;
+        }
+      }
         .member-img {
           width: 45%;
           // width: 10vw;
@@ -184,17 +202,16 @@ section {
 
       ul {
         width: 100%;
-        background: pink;
+        // background: pink;
         li {
           a {
             text-decoration: none;
-            font-size: 1vw;
+            font-size: 20px;
             font-family: @font-family, @font-slab;
-            color: @accent-color;
-            ;
+            color: whitesmoke;
           }
           .soc-logo {
-            width: 1.2vw;
+            width: 20px;
             height: auto;
           }
         }
