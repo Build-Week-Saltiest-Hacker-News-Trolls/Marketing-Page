@@ -40,14 +40,20 @@ section {
       z-index: 10;
       display: flex;
       height: 60vh;
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 1000px) {
+        height: 50vh;
+      }
+      @media screen and (max-width: 700px) {
         height: 32rem;
         flex-direction: column;
+      }
+      @media screen and (max-width: 600px) {
+        height: auto;
       }
       .col {
         width: 50%;
         padding: 0 2%;
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 700px) {
           width: auto;
         }
         @media screen and (max-width: 1000px),
@@ -90,14 +96,13 @@ section {
       }
     }
     span {
-      width: 100%;
-      z-index: 10;
-      margin-top: 2rem;
-      display: flex;
-      justify-content: center;
+      .span();
       a {
         &.button-about {
           z-index: 11;
+          @media screen and (max-width: 785px) {
+            margin-bottom: 4px;
+          }
         }
       }
     }
