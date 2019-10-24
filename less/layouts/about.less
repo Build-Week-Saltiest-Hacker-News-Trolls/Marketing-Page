@@ -127,63 +127,74 @@ section {
 }
 
 .about-container {
-  margin: 0 auto;
   padding: 50px;
   width: 100%;
   background: @alert-color;
-  .team-section {
-    background: green;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    p{
+    h1 {
+      padding-top: 100px;
       text-align: center;
       font-size: 3vw;
       font-family: @font-family, @font-slab;
       color: @accent-color;
     }
+  .team-section {
+    margin-top: 50px;
+    // margin-right: 100px;
+    height: 100vh;
+    background: green;
+    display: flex;
+    flex-wrap: wrap;
+  
     .team-card {
       background: orange;
-      width: 40%;
+      width: 20%;
+      height: 30vh;
+      min-width:100px;
       padding: 10px;
       border: 3px solid black;
       border-radius: 10px;
       display: flex;
       flex-direction: column;
+      justify-content: space-around;
       .tCard-top {
         display: flex;
         justify-content: space-around;
-      }
-      .member-name {
-        background: grey;
-        display: flex;
-        // padding: 5%;
-        width: 55%;
-        flex-direction: column;
-        align-items: baseline;
-        justify-content: center;
-        p {
-          // padding: 5%;
-          font-size: 2vw;
+        background: yellow;
+        .member-name {
+          background: grey;
+          display: flex;
+          width: 50%;
+          flex-direction: column;
+          align-items: center;
+          // justify-items: flex-start; name doesn't move to top, inheritence issue?
+          h1 {
+            font-size: 1.5vw;
+          }
+          h2 {
+            font-size: 1.2vw;
+          }
+        }
+        .member-img {
+          width: 45%;
+          // width: 10vw;
+          border-radius: 10%;
+          height: auto;
         }
       }
-      .member-img {
-        width: 15vw;
-        border-radius: 10%;
-        height: auto;
-      }
+
       ul {
         width: 100%;
         background: pink;
         li {
           a {
             text-decoration: none;
-            font-size: 2vw;
+            font-size: 1vw;
             font-family: @font-family, @font-slab;
             color: @accent-color;
+            ;
           }
           .soc-logo {
-            width: 3vw;
+            width: 1.2vw;
             height: auto;
           }
         }
