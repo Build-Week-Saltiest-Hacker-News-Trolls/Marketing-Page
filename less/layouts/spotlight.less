@@ -26,12 +26,18 @@ section {
     .spotlight-lead {
       text-align: center;
       z-index: 10;
+      padding: 0 1rem;
+      width: 65%;
+      @media screen and (max-width: 1100px) {
+        width: 80%;
+      }
       h2 {
         &.spotlight-title {
-          margin-bottom: 10px;
+          padding-bottom: 1.5rem;
           color: @primary-color;
-          //text-shadow: 0 0 5px #000000;
+          text-shadow: 0 0 5px #000000;
           text-outline: 1px 1px #ffffff;
+          line-height: 0.8;
           @media screen and (max-width: 1000px),
           screen and (max-width: 600px) {
             font-size: 3rem;
@@ -62,7 +68,7 @@ section {
     span {
       z-index: 10;
       display: block;
-      margin-top: 45px;
+      margin-top: 3.5rem;
       a {
         &.button-spotlight {
           z-index: 11;
