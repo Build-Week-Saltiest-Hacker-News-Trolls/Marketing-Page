@@ -604,9 +604,15 @@ section.section-about span a.button-about {
 }
 .about-container {
   margin: 0 auto;
-  padding: 100px;
+  padding: 50px;
   width: 100%;
   background: #CC2936;
+}
+.about-container .team-section {
+  background: green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .about-container .team-section p {
   text-align: center;
@@ -615,28 +621,46 @@ section.section-about span a.button-about {
   color: #02182B;
 }
 .about-container .team-section .team-card {
-  padding: 20px;
+  background: orange;
+  width: 40%;
+  padding: 10px;
   border: 3px solid black;
   border-radius: 10px;
   display: flex;
+  flex-direction: column;
+}
+.about-container .team-section .team-card .tCard-top {
+  display: flex;
   justify-content: space-around;
 }
+.about-container .team-section .team-card .member-name {
+  background: grey;
+  display: flex;
+  width: 55%;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+.about-container .team-section .team-card .member-name p {
+  font-size: 2vw;
+}
 .about-container .team-section .team-card .member-img {
-  width: auto;
+  width: 15vw;
   border-radius: 10%;
-  height: 30%;
+  height: auto;
 }
 .about-container .team-section .team-card ul {
-  padding-right: 50px;
+  width: 100%;
+  background: pink;
 }
 .about-container .team-section .team-card ul li a {
   text-decoration: none;
-  font-size: 3vw;
+  font-size: 2vw;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, 'Zilla Slab';
   color: #02182B;
 }
 .about-container .team-section .team-card ul li .soc-logo {
-  width: 40px;
+  width: 3vw;
   height: auto;
 }
 section.section-samples {
