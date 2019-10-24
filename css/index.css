@@ -606,7 +606,7 @@ section.section-about span a.button-about {
   padding-top: 30px;
   padding-left: 50px;
   width: 100%;
-  background: #CC2936;
+  background: grey;
 }
 .about-container h1 {
   padding-top: 100px;
@@ -614,7 +614,7 @@ section.section-about span a.button-about {
   text-align: center;
   font-size: 60px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, 'Zilla Slab';
-  color: #02182B;
+  color: whitesmoke;
 }
 @media screen and (max-width: 600px) {
   .about-container h1 {
@@ -644,7 +644,7 @@ section.section-about span a.button-about {
   width: 300px;
   padding: 20px;
   margin-bottom: 20px;
-  border: 3px solid black;
+  border: 3px solid white;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
