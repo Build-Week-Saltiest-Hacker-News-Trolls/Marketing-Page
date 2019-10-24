@@ -280,7 +280,33 @@ body #main-wrapper.main-wrapper {
   transform: rotate(45deg);
   top: 0;
 }
-@media (min-width: 801px) {
+@media (min-width: 801px) and (max-width: 1000px) {
+  .header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header .navigation {
+    width: 100%;
+    clear: none;
+    max-height: none;
+    margin-left: auto;
+  }
+  .header .navigation ul {
+    display: flex;
+  }
+  .header .navigation ul li {
+    width: 25%;
+  }
+  .header .navigation ul li a {
+    width: auto;
+    text-align: center;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+@media (min-width: 1001px) {
   .header {
     display: flex;
     align-items: center;
@@ -485,11 +511,20 @@ section.section-about h2 {
   z-index: 10;
   height: 5.5rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   section.section-about h2 {
     font-size: 50px;
-    margin-top: 70px;
     height: 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  section.section-about h2 {
+    margin-top: 4.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.section-about h2 {
+    margin-top: 8.5rem;
   }
 }
 section.section-about .column {
@@ -502,9 +537,9 @@ section.section-about .column {
     height: 50vh;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 690px) {
   section.section-about .column {
-    height: 32rem;
+    height: 28rem;
     flex-direction: column;
   }
 }
@@ -528,7 +563,7 @@ section.section-about .column .col {
   }
 }
 section.section-about .column .col.col-product {
-  width: 300px;
+  width: 500px;
 }
 @media screen and (max-width: 1000px), screen and (max-width: 600px) {
   section.section-about .column .col.col-product {
@@ -547,7 +582,7 @@ section.section-about .column .col.col-product img.product-image {
 section.section-about .column .col p {
   margin-bottom: 30px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   section.section-about .column .col p {
     font-size: 20px;
   }
@@ -559,7 +594,7 @@ section.section-about .column .col ul {
 section.section-about .column .col ul li {
   margin-bottom: 5px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   section.section-about .column .col ul li {
     font-size: 20px;
   }
@@ -571,7 +606,7 @@ section.section-about span {
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   section.section-about span {
     flex-wrap: wrap;
     flex-direction: column;
@@ -637,7 +672,7 @@ section.section-samples span {
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   section.section-samples span {
     flex-wrap: wrap;
     flex-direction: column;
