@@ -806,24 +806,11 @@ section.section-samples {
 }
 section.section-samples .grid {
   padding-top: 6rem;
-  display: flex;
-  width: 100%;
-  height: auto;
-  justify-content: space-evenly;
-}
-@media screen and (max-width: 1000px), screen and (max-width: 600px) {
-  section.section-samples .grid {
-    flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 600px) {
-  section.section-samples .grid {
-    flex-direction: column;
-    align-items: center;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 section.section-samples .grid .card {
-  padding: 10px;
+  padding: 20px 10px;
 }
 section.section-samples .grid .card .sample-img {
   width: 100%;
