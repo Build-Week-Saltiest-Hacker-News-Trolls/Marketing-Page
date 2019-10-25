@@ -391,6 +391,19 @@ footer p {
   font-size: 1.25rem;
   color: #FEFFFE;
 }
+footer p a {
+  color: #FEFFFE;
+  text-decoration: none;
+}
+footer p a span {
+  border-bottom: 1px dashed #FF7200;
+}
+footer p a:hover {
+  color: #FF7200;
+}
+footer p a:hover span {
+  border-bottom: 1px solid #FF7200;
+}
 footer span {
   margin-top: 0.65rem;
 }
