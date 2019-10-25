@@ -13,6 +13,19 @@ footer {
   p {
     font-size: 1.25rem;
     color: @light-color;
+    a {
+      color: @light-color;
+      text-decoration: none;
+      span {
+        border-bottom: 2px dashed @primary-color;
+      }
+      &:hover {
+        color: @primary-color;
+        span {
+          border-bottom: 1px solid @primary-color;
+        }
+      }
+    }
   }
   span {
     margin-top: 0.65rem;
