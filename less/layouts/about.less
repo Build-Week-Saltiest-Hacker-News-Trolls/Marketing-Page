@@ -27,18 +27,19 @@ section {
     h2 {
       text-align: center;
       width: 100%;
-      margin: 6rem 0 2rem;
+      margin: 7.5rem 0 2rem;
       z-index: 10;
       height: 5.5rem;
+      @media screen and (max-width: 1000px) {
+        margin-top: 7.5rem;
+      }
       @media screen and (max-width: 700px) {
         font-size: 50px;
         height: 3rem;
+        margin-top: 7.5rem;
       }
       @media screen and (max-width: 600px) {
         margin-top: 4.5rem;
-      }
-      @media screen and (max-width: 1000px) {
-        margin-top: 8.5rem;
       }
     }
     .column {
@@ -49,12 +50,12 @@ section {
         height: 50vh;
       }
       @media screen and (max-width: 690px) {
-        height: 28rem;
+        height: 26rem;
         flex-direction: column;
       }
-      @media screen and (max-width: 600px) {
-        height: auto;
-      }
+      //@media screen and (max-width: 600px) {
+      //  height: auto;
+      //}
       .col {
         width: 50%;
         padding: 0 2%;

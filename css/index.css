@@ -555,24 +555,25 @@ section.section-about:before {
 section.section-about h2 {
   text-align: center;
   width: 100%;
-  margin: 6rem 0 2rem;
+  margin: 7.5rem 0 2rem;
   z-index: 10;
   height: 5.5rem;
+}
+@media screen and (max-width: 1000px) {
+  section.section-about h2 {
+    margin-top: 7.5rem;
+  }
 }
 @media screen and (max-width: 700px) {
   section.section-about h2 {
     font-size: 50px;
     height: 3rem;
+    margin-top: 7.5rem;
   }
 }
 @media screen and (max-width: 600px) {
   section.section-about h2 {
     margin-top: 4.5rem;
-  }
-}
-@media screen and (max-width: 1000px) {
-  section.section-about h2 {
-    margin-top: 8.5rem;
   }
 }
 section.section-about .column {
@@ -587,13 +588,8 @@ section.section-about .column {
 }
 @media screen and (max-width: 690px) {
   section.section-about .column {
-    height: 28rem;
+    height: 26rem;
     flex-direction: column;
-  }
-}
-@media screen and (max-width: 600px) {
-  section.section-about .column {
-    height: auto;
   }
 }
 section.section-about .column .col {
