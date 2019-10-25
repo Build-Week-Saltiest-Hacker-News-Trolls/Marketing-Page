@@ -284,7 +284,6 @@ body #main-wrapper.main-wrapper {
   .header {
     display: flex;
     align-items: center;
-    flex-direction: column;
   }
   .header .navigation {
     width: 100%;
@@ -339,6 +338,8 @@ body #main-wrapper.main-wrapper {
   align-items: center;
   font-size: 2em;
   padding: 10px 20px;
+  width: 450px;
+  background: #FFF;
 }
 .site-branding .logo {
   font-weight: bold;
@@ -661,6 +662,7 @@ section.section-about span a.button-about {
 }
 .about-nav .about-nav-links {
   width: auto;
+  background: white;
   margin-right: 10px;
   display: flex;
   justify-content: flex-end;
@@ -671,6 +673,7 @@ section.section-about span a.button-about {
 }
 .about-nav .about-nav-links a:hover {
   background: #FF7200;
+  color: white;
 }
 .about-container {
   padding-top: 30px;
