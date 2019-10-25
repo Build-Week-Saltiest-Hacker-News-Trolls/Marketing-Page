@@ -396,7 +396,7 @@ footer p a {
   text-decoration: none;
 }
 footer p a span {
-  border-bottom: 1px dashed #FF7200;
+  border-bottom: 2px dashed #FF7200;
 }
 footer p a:hover {
   color: #FF7200;
@@ -596,14 +596,19 @@ section.section-about .column .col {
   width: 50%;
   padding: 0 2%;
 }
-@media screen and (max-width: 700px) {
-  section.section-about .column .col {
-    width: auto;
-  }
-}
 @media screen and (max-width: 1000px), screen and (max-width: 600px) {
   section.section-about .column .col {
     padding: 2rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  section.section-about .column .col {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 690px) {
+  section.section-about .column .col {
+    width: auto;
   }
 }
 section.section-about .column .col.col-product {
@@ -625,11 +630,28 @@ section.section-about .column .col.col-product img.product-image {
 }
 section.section-about .column .col p {
   margin-bottom: 30px;
+  line-height: normal;
 }
 @media screen and (max-width: 700px) {
   section.section-about .column .col p {
     font-size: 20px;
   }
+}
+section.section-about .column .col p a {
+  color: #02182B;
+  text-decoration: none;
+}
+section.section-about .column .col p a span {
+  border-bottom: 2px dashed #FF7200;
+  width: auto;
+  margin: 0;
+  display: inherit;
+}
+section.section-about .column .col p a:hover {
+  color: #FF7200;
+}
+section.section-about .column .col p a:hover span {
+  border-bottom: 1px solid #FF7200;
 }
 section.section-about .column .col ul {
   list-style: square;

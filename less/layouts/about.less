@@ -59,12 +59,15 @@ section {
       .col {
         width: 50%;
         padding: 0 2%;
-        @media screen and (max-width: 700px) {
-          width: auto;
-        }
         @media screen and (max-width: 1000px),
         screen and (max-width: 600px) {
           padding: 2rem;
+        }
+        @media screen and (max-width: 700px) {
+          width: 100%;
+        }
+        @media screen and (max-width: 690px) {
+          width: auto;
         }
         &.col-product {
           width: 500px;
@@ -85,8 +88,25 @@ section {
         }
         p {
           margin-bottom: 30px;
+          line-height: normal;
           @media screen and (max-width: 700px) {
             font-size: 20px;
+          }
+          a {
+            color: @dark-color;
+            text-decoration: none;
+            span {
+              border-bottom: 2px dashed @primary-color;
+              width: auto;
+              margin: 0;
+              display: inherit;
+            }
+            &:hover {
+              color: @primary-color;
+              span {
+                border-bottom: 1px solid @primary-color;
+              }
+            }
           }
         }
         ul {
