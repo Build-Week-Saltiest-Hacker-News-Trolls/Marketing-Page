@@ -113,3 +113,119 @@ section {
     }
   }
 }
+
+
+// About page 
+
+.about-nav {
+  width: 100%;
+  justify-content: space-between;
+  .about-nav-links {
+    width: auto;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    a {
+      text-decoration: none;
+      padding: 20px;
+      &:hover {
+        background: @primary-color;
+      }
+    }
+  }
+
+}
+
+.about-container {
+  padding-top: 30px;
+  padding-left: 50px;
+  width: 100%;
+  background: grey;
+    h1 {
+      // background: lightblue;
+      padding-top: 100px;
+      width: 92%;
+      text-align: center;
+      font-size: 60px;
+      font-family: @font-family, @font-slab;
+      color: whitesmoke;
+      @media screen and (max-width: 600px) {
+        font-size: 40px;
+        // background: grey;
+        width: 78%;        
+      }
+    }
+  .team-section {
+    margin-top: 30px;
+    margin-right: 100px;
+    height: 100%;
+    // background: green;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    @media screen and (max-width: 600px) {
+      align-items: space-between;
+      padding: 0px;
+    }
+    .team-card {
+      background: @primary-color;
+      width: 30%;
+      height: 30vh;
+      width:300px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 3px solid white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .tCard-top {
+        display: flex;
+        justify-content: space-around;
+        // background: yellow;
+      .member-name {
+        // background: grey;
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        justify-items: flex-start;
+        align-items: center;
+        h1 {
+          font-size: 20px;
+          padding: 15px;
+          color: whitesmoke;
+          // margin: 0;
+        }
+        h2 {
+          font-size: 18px;
+          color: whitesmoke;
+        }
+      }
+        .member-img {
+          width: 45%;
+          // width: 10vw;
+          border-radius: 10%;
+          height: auto;
+        }
+      }
+
+      ul {
+        width: 100%;
+        // background: pink;
+        li {
+          a {
+            text-decoration: none;
+            font-size: 20px;
+            font-family: @font-family, @font-slab;
+            color: whitesmoke;
+          }
+          .soc-logo {
+            width: 20px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

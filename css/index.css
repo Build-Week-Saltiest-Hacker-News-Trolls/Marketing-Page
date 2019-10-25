@@ -479,6 +479,32 @@ section.section-spotlight .spotlight-image img {
   width: 100%;
   height: auto;
 }
+section.section-spotlight .spotlight-subsection {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin-top: 20px;
+}
+@media screen and (max-width: 600px) {
+  section.section-spotlight .spotlight-subsection {
+    width: 100%;
+  }
+}
+section.section-spotlight .spotlight-subsection h3 {
+  color: #FF7200;
+  font-size: 3rem;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+@media screen and (max-width: 600px) {
+  section.section-spotlight .spotlight-subsection h3 {
+    font-size: 2rem;
+  }
+}
+section.section-spotlight .spotlight-subsection .spotlight-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 section.section-spotlight span {
   z-index: 10;
   display: block;
@@ -628,6 +654,109 @@ section.section-about span a.button-about {
   section.section-about span a.button-about {
     margin-bottom: 4px;
   }
+}
+.about-nav {
+  width: 100%;
+  justify-content: space-between;
+}
+.about-nav .about-nav-links {
+  width: auto;
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.about-nav .about-nav-links a {
+  text-decoration: none;
+  padding: 20px;
+}
+.about-nav .about-nav-links a:hover {
+  background: #FF7200;
+}
+.about-container {
+  padding-top: 30px;
+  padding-left: 50px;
+  width: 100%;
+  background: grey;
+}
+.about-container h1 {
+  padding-top: 100px;
+  width: 92%;
+  text-align: center;
+  font-size: 60px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, 'Zilla Slab';
+  color: whitesmoke;
+}
+@media screen and (max-width: 600px) {
+  .about-container h1 {
+    font-size: 40px;
+    width: 78%;
+  }
+}
+.about-container .team-section {
+  margin-top: 30px;
+  margin-right: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 600px) {
+  .about-container .team-section {
+    align-items: space-between;
+    padding: 0px;
+  }
+}
+.about-container .team-section .team-card {
+  background: #FF7200;
+  width: 30%;
+  height: 30vh;
+  width: 300px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 3px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.about-container .team-section .team-card .tCard-top {
+  display: flex;
+  justify-content: space-around;
+}
+.about-container .team-section .team-card .tCard-top .member-name {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: center;
+}
+.about-container .team-section .team-card .tCard-top .member-name h1 {
+  font-size: 20px;
+  padding: 15px;
+  color: whitesmoke;
+}
+.about-container .team-section .team-card .tCard-top .member-name h2 {
+  font-size: 18px;
+  color: whitesmoke;
+}
+.about-container .team-section .team-card .tCard-top .member-img {
+  width: 45%;
+  border-radius: 10%;
+  height: auto;
+}
+.about-container .team-section .team-card ul {
+  width: 100%;
+}
+.about-container .team-section .team-card ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, 'Zilla Slab';
+  color: whitesmoke;
+}
+.about-container .team-section .team-card ul li .soc-logo {
+  width: 20px;
+  height: auto;
 }
 section.section-samples {
   height: 100%;
