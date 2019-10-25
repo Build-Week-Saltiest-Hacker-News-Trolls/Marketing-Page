@@ -69,8 +69,33 @@
     }
   }
 }
-
-@media (min-width:801px){
+@media (min-width:801px) and (max-width: 1000px){
+  .header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .navigation {
+      width: 100%;
+      clear: none;
+      max-height: none;
+      margin-left: auto;
+      ul {
+        display: flex;
+        li {
+          width: 25%;
+          a {
+            width: auto;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .menu-icon {
+      display: none;
+    }
+  }
+}
+@media (min-width:1001px){
   .header {
     display: flex;
     align-items: center;
