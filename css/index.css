@@ -589,7 +589,7 @@ section.section-about .column {
 }
 @media screen and (max-width: 690px) {
   section.section-about .column {
-    height: 26rem;
+    height: 24rem;
     flex-direction: column;
   }
 }
