@@ -16,6 +16,7 @@
     <body>
 
         <header role="banner" id="header" class="header">
+
             <div id="site-branding" class="site-branding">
                 <div class="logo">
                     <a href="index.html">
@@ -27,12 +28,29 @@
                 <div class="logo-image"></div>
             </div>
         
-            <nav class="about-nav">
+            <input class="menu-button" type="checkbox" id="menu-button" />
+            <label class="menu-icon" for="menu-button"><span class="nav-icon"></span></label>
+
+            <!--  Nav - start -->
+            <nav role="navigation" id="navigation" class="navigation">
+                <ul class="menu">
+                    <li class="nav nav-item"><a href="about.html">The Team</a></li>
+                    <li class="nav nav-item"><a href="index.html">Spotlight</a></li>
+                    <li class="nav nav-item"><a href="/index.html#about">About the App</a></li>
+                    <li class="nav nav-item"><a href="/index.html#samples">Screenshots</a></li>
+                </ul>
+            </nav>
+            <!--  Nav - end -->
+
+
+          <!-- original about nav, built seperate, used original to match -->
+
+            <!-- <nav class="about-nav">
                 <div class="about-nav-links">
                     <a href="index.html">Home</a>
                     <a href="#">App</a>
                 </div>
-            </nav>
+            </nav> -->
         
         </header>
 
@@ -52,7 +70,7 @@
                         </div>
                     </div>
                     <ul class="soc-media">
-                        <li><img class="soc-logo" src="images/Team/logos/github.png"> <a href="https://github.com/christopherc1331">github.com/christopherc1331</a></li>
+                        <li><img class="soc-logo git-logo" src="images/Team/logos/github.png"> <a href="https://github.com/christopherc1331">github.com/christopherc1331</a></li>
                         <li><img class="soc-logo" src="images/Team/logos/twitter.png"> <a href="https://twitter.com/ChrisCruzes">twitter.com/ChrisCruzes</a></li>
                         <li><img class="soc-logo" src="images/Team/logos/linkedin.png"> <a href="https://www.linkedin.com/in/christopher-cruz-5b7979186/">linkedin.com/in/christopher-cruz-5b7979186/</a></li>
                     </ul>  
@@ -68,7 +86,7 @@
                         </div>
                     </div>
                     <ul class="soc-media">
-                        <li><img class="soc-logo" src="images/Team/logos/github.png"> <a href="https://github.com/kmk028">github.com/kmk028</a></li>
+                        <li><img class="soc-logo git-logo" src="images/Team/logos/github.png"> <a href="https://github.com/kmk028">github.com/kmk028</a></li>
                     </ul>  
                 </div>
                 
@@ -82,7 +100,7 @@
                         </div>
                     </div>
                     <ul class="soc-media">
-                        <li><img class="soc-logo" src="images/Team/logos/github.png"> <a href="https://github.com/ssmodish">github.com/ssmodish</a></li>
+                        <li><img class="soc-logo git-logo" src="images/Team/logos/github.png"> <a href="https://github.com/ssmodish">github.com/ssmodish</a></li>
                         <li><img class="soc-logo" src="images/Team/logos/linkedin.png"> <a href="https://www.linkedin.com/in/stevesmodish/">linkedin.com/in/stevesmodish/</a></li>
                     </ul>  
                 </div>
@@ -97,7 +115,7 @@
                         </div>
                     </div>
                     <ul class="soc-media">
-                        <li><img class="soc-logo" src="images/Team/logos/github.png"> <a href="https://github.com/martinclehman">github.com/martinclehman</a></li>
+                        <li><img class="soc-logo git-logo" src="images/Team/logos/github.png"> <a href="https://github.com/martinclehman">github.com/martinclehman</a></li>
                     </ul>  
                 </div>
 
@@ -111,7 +129,7 @@
                         </div>
                     </div>
                     <ul class="soc-media">
-                        <li><img class="soc-logo" src="images/Team/logos/github.png"> <a href="http://github.com/vinnihoke">github.com/vinnihoke</a></li>
+                        <li><img class="soc-logo git-logo" src="images/Team/logos/github.png"> <a href="http://github.com/vinnihoke">github.com/vinnihoke</a></li>
                     </ul>  
                 </div>
 
@@ -125,7 +143,7 @@
                         </div>
                     </div>
                     <ul class="soc-media">
-                        <li><img class="soc-logo" src="images/Team/logos/github.png"> <a href="https://github.com/mppadiernos">github.com/mppadiernos</a></li>
+                        <li><img class="soc-logo git-logo" src="images/Team/logos/github.png"> <a href="https://github.com/mppadiernos">github.com/mppadiernos</a></li>
                         <li><img class="soc-logo" src="images/Team/logos/gmail.png"> <a href="mike.padiernos@gmail.com">mike.padiernos@gmail.com</a></li>
                     </ul>  
                 </div>
@@ -140,7 +158,7 @@
                         </div>
                     </div>
                     <ul class="soc-media">
-                        <li><img class="soc-logo" src="images/Team/logos/github.png"> <a href="https://github.com/b1zz3">github.com/b1zz3</a></li>
+                        <li><img class="soc-logo git-logo" src="images/Team/logos/github.png"> <a href="https://github.com/b1zz3">github.com/b1zz3</a></li>
                         <li><img class="soc-logo" src="images/Team/logos/gmail.png"> <a href="donhager23@gmail.com">donhager23@gmail.com</a></li>
                     </ul>  
                 </div>
@@ -155,7 +173,7 @@
                         </div>
                     </div>
                     <ul class="soc-media">
-                        <li><img class="soc-logo" src="images/Team/logos/github.png"> <a href="http://github.com/Xerillius">github.com/Xerillius</a></li>
+                        <li><img class="soc-logo git-logo" src="images/Team/logos/github.png"> <a href="http://github.com/Xerillius">github.com/Xerillius</a></li>
                         <li><img class="soc-logo" src="images/Team/logos/linkedin.png"> <a href="https://www.linkedin.com/in/christopher-quinn-a46367176/">www.linkedin.com/in/christopher-quinn-a46367176</a></li>
                     </ul>  
                 </div>
@@ -170,7 +188,7 @@
                         </div>
                     </div>
                     <ul class="soc-media">
-                        <li><img class="soc-logo" src="images/Team/logos/github.png"> <a href="https://github.com/DentonWarnock">github.com/DentonWarnock</a></li>
+                        <li><img class="soc-logo git-logo" src="images/Team/logos/github.png"> <a href="https://github.com/DentonWarnock">github.com/DentonWarnock</a></li>
                     </ul>  
                 </div>
 
