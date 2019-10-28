@@ -407,13 +407,25 @@ footer p a:hover span {
 footer span {
   margin-top: 0.65rem;
 }
-footer span a {
+footer span.icons.icons-social a {
+  text-decoration: none;
+}
+footer span.icons.icons-social a i.cui-github {
+  display: block;
+  font-size: 32px;
+  background-color: #FEFFFE;
+  color: #02182B;
+  margin: 12px 10px 2px;
+  padding: 6px;
+  border-radius: 50%;
+}
+footer span.links a {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-footer span a:before {
+footer span.links a:before {
   content: "";
   width: 0;
   height: 0;
@@ -422,7 +434,7 @@ footer span a:before {
   border-bottom-color: #FEFFFE;
   margin-bottom: 8px;
 }
-footer span a:hover {
+footer span.links a:hover {
   color: #dddddd;
 }
 section.section-spotlight {
