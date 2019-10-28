@@ -38,9 +38,12 @@ section {
       //}
       // Grid layout used
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      @media (min-width:801px) and (max-width: 1000px){
+        padding-top: 9rem;
+      }
       .card {
-        padding: 20px 10px;
+        padding: 10px 30px;
         .sample-img {
           width: 100%;
           height: auto;

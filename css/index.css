@@ -414,7 +414,7 @@ footer span {
 footer span.icons.icons-social a {
   text-decoration: none;
 }
-footer span.icons.icons-social a i.cui-github {
+footer span.icons.icons-social a i.fa {
   display: block;
   font-size: 32px;
   background-color: #FEFFFE;
@@ -828,10 +828,15 @@ section.section-samples {
 section.section-samples .grid {
   padding-top: 6rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+@media (min-width: 801px) and (max-width: 1000px) {
+  section.section-samples .grid {
+    padding-top: 9rem;
+  }
 }
 section.section-samples .grid .card {
-  padding: 20px 10px;
+  padding: 10px 30px;
 }
 section.section-samples .grid .card .sample-img {
   width: 100%;
