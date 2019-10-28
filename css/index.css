@@ -339,6 +339,8 @@ body #main-wrapper.main-wrapper {
   align-items: center;
   font-size: 2em;
   padding: 10px 20px;
+  width: 270px;
+  background: #FFF;
 }
 .site-branding .logo {
   font-weight: bold;
@@ -754,9 +756,8 @@ section.section-about span a.button-about {
 }
 .about-container .team-section .team-card {
   background: #FF7200;
-  width: 30%;
-  height: 30vh;
-  width: 300px;
+  width: 400px;
+  height: auto;
   padding: 20px;
   margin-bottom: 20px;
   border: 3px solid white;
@@ -764,6 +765,7 @@ section.section-about span a.button-about {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-content: flex-start;
 }
 .about-container .team-section .team-card .tCard-top {
   display: flex;
@@ -802,6 +804,9 @@ section.section-about span a.button-about {
 .about-container .team-section .team-card ul li .soc-logo {
   width: 20px;
   height: auto;
+}
+.about-container .team-section .team-card ul li .soc-logo.git-logo {
+  border-radius: 30%;
 }
 section.section-samples {
   height: 100%;
