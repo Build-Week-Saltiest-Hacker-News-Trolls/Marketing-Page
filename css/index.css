@@ -339,6 +339,8 @@ body #main-wrapper.main-wrapper {
   align-items: center;
   font-size: 2em;
   padding: 10px 20px;
+}
+.site-branding.cl-team {
   width: 270px;
   background: #FFF;
 }
@@ -409,13 +411,25 @@ footer p a:hover span {
 footer span {
   margin-top: 0.65rem;
 }
-footer span a {
+footer span.icons.icons-social a {
+  text-decoration: none;
+}
+footer span.icons.icons-social a i.cui-github {
+  display: block;
+  font-size: 32px;
+  background-color: #FEFFFE;
+  color: #02182B;
+  margin: 12px 10px 2px;
+  padding: 6px;
+  border-radius: 50%;
+}
+footer span.links a {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-footer span a:before {
+footer span.links a:before {
   content: "";
   width: 0;
   height: 0;
@@ -424,7 +438,7 @@ footer span a:before {
   border-bottom-color: #FEFFFE;
   margin-bottom: 8px;
 }
-footer span a:hover {
+footer span.links a:hover {
   color: #dddddd;
 }
 section.section-spotlight {
@@ -590,7 +604,7 @@ section.section-about .column {
 }
 @media screen and (max-width: 690px) {
   section.section-about .column {
-    height: 26rem;
+    height: 24rem;
     flex-direction: column;
   }
 }

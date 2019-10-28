@@ -29,24 +29,44 @@ footer {
   }
   span {
     margin-top: 0.65rem;
-    a {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      &:before {
-        content: "";
-        width: 0;
-        height: 0;
-        display: inline-block;
-        border: 0.55rem solid transparent;
-        border-bottom-color: @light-color;
-        margin-bottom: 8px;
+    &.icons {
+      &.icons-social {
+        a {
+          text-decoration: none;
+          i {
+            &.cui-github {
+              display: block;
+              font-size: 32px;
+              background-color: @light-color;
+              color: @dark-color;
+              margin: 12px 10px 2px;
+              padding: 6px;
+              border-radius: 50%;
+            }
+          }
+        }
       }
-      &:hover {
-        color: #dddddd;
-      }
-      &.link-top {
+    }
+    &.links {
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &:before {
+          content: "";
+          width: 0;
+          height: 0;
+          display: inline-block;
+          border: 0.55rem solid transparent;
+          border-bottom-color: @light-color;
+          margin-bottom: 8px;
+        }
+        &:hover {
+          color: #dddddd;
+        }
+        &.link-top {
+        }
       }
     }
   }
