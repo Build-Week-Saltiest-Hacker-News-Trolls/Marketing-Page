@@ -394,6 +394,7 @@ footer {
 footer p {
   font-size: 1.25rem;
   color: #FEFFFE;
+  line-height: 1.25;
 }
 footer p a {
   color: #FEFFFE;
