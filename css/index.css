@@ -339,6 +339,8 @@ body #main-wrapper.main-wrapper {
   align-items: center;
   font-size: 2em;
   padding: 10px 20px;
+}
+.site-branding.cl-team {
   width: 270px;
   background: #FFF;
 }
