@@ -13,7 +13,7 @@ Consisting of two HTML files and the CSS was compiled using the LESS preprocesso
 [https://bw-shnt.netlify.com/]<br>
 - - -
 **React app deployment**<br>
-[https://front-end.build-week-saltiest-hacker-news-trolls.now.sh/]
+[https://front-end-git-development.build-week-saltiest-hacker-news-trolls.now.sh/]
 - - -
 **Project repos**
 * [Front-end](https://github.com/Build-Week-Saltiest-Hacker-News-Trolls/Front-End)
