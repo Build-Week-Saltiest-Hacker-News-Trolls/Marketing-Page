@@ -605,7 +605,7 @@ section.section-about .column {
 }
 @media screen and (max-width: 690px) {
   section.section-about .column {
-    height: 24rem;
+    height: 26rem;
     flex-direction: column;
   }
 }
